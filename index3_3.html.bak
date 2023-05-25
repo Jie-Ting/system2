@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>分享課程心得平台</title>
+  <style>
+    img{
+        width: 270px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color:rgb(246, 245, 220);
+        flex-direction: column;
+        overflow: hidden;
+        overflow-x: hidden;
+        max-height: 100vh;
+    }
+    #container {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 100vw;
+    }
+    #container::-webkit-scrollbar {
+      height: 10px;
+      background-color: white;
+    }
+    .container2 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #container::-webkit-scrollbar-thumb{
+        background-color: #dc9260;
+    }
+    .box {
+      flex:1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      flex-direction: column;
+      margin-right:10px;
+      margin-left:10px;
+      
+    }
+    .in2{
+        width:100px;
+        height:50px;
+        border-radius:30px;
+        border: 3px solid #5e4d31;
+        font-size: 20px;
+        background-color: #dc9260;
+        color:white;
+        font-family: 微軟正黑體;
+        font-weight: bold;
+    }
+    .t{
+        font-size: 20px;
+        font-weight: bold;
+        color:#5e4d31;
+    }
+    .t2{
+        font-size: 16px;
+        color:#5e4d31;
+    }
+    #header {
+        background-color: #dc9260;
+        color: #fff;
+        padding: 10px;
+        width:100%;
+
+    }
+    #navigation {
+      display: inline-block;
+      margin-right: 20px;
+      
+    }
+    #logo {
+        width:50px;
+	}
+    .a1 {
+      text-decoration:none;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #index {
+      display: inline-block;
+      margin-left: 20px;
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container2">
+    <header id="header">
+        <!--主選單-->
+                
+            <nav id="navigation">
+              <!-- 導航頁連結 --><img id="logo" src="logo.png" />
+              <a href="member.html" class="a1">帳號會員</a> |
+              <a href="index5.html" class="a1">課程</a> |
+              <a href="#" class="a1">商店</a> |
+              <a href="#" class="a1">懸賞區</a>
+            </nav>
+            
+          </header>
+          <div id="index">
+            >>>商店>>>主題色
+          </div>
+        </div>
+  <div id="container">
+    <div class="box">
+        <img src="z1.png">
+        <p class="t"style="margin: 9px;">粉色主題色</p>
+        <div  style="display: inline-block;" class="t2">
+        <label for="myCheckbox">1 星星</label>
+        <input type="checkbox" id="myCheckbox">
+    </div>
+        <div  style="display: inline-block;" class="t2">
+        <label for="myCheckbox2">50 愛心</label>
+        <input type="checkbox" id="myCheckbox2">
+    </div>
+        <input class="in2"type="submit"value="購買">
+    </div>
+    <div class="box">
+        <img src="z2.png">
+        <p class="t"style="margin: 9px;">綠色主題色</p>
+        <div style="text-align: right;" class="t2">
+        <input type="range" id="rangeInput" name="range" min="0" max="2" step="1" value="0">0 星星
+        <br>150 愛心
+        </div>
+        <input class="in2"type="submit"value="購買">
+    </div>
+    <div class="box t2">
+        <img src="z3.png">
+        <p class="t" style="margin: 0;">藍色主題色</p><br>
+        3 星星(星星限定)<br><br>
+        <input class="in2"type="submit"value="購買">
+    </div>
+  </div>
+</body>
+</html>
